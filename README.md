@@ -1,11 +1,11 @@
 
-### Configurations for `.env` file:
+### **Configurations for `.env` file:**
 
 1. Open `.env` file with your desired editor and enter your details in place of `<INPUT>`
 2. Save the `.env` file 
 3. > **NOTE:** You don't have to edit any api keys stored in the `.env` file until you are a dev and want to input your own api keys 
 
-### Configuration of your email account to use send email function: 
+### **Configuration of your email account to use send email function:**
 
 #### *If you're using Gmail as your email provider.*
 
@@ -16,7 +16,7 @@
 **Guide to How to set an app password for your Gmail account: https://support.google.com/accounts/answer/185833**
 > **NOTE:** If you're using any other email providers, you might have to hop on google and run some searches to set app password if you have 2FA enabled in your account  
 
-### Configuration of paths to your programs in your PC you want to open with FRIDAY:
+### **Configuration of paths to your programs in your PC you want to open with FRIDAY:**
 
 1. Open `paths.py` file with your desirable editor and paste paths of the program in place of `<PATH>`
 2. > **NOTE:** Remember to use `\\` instead of `\` while entering path. 
