@@ -1,4 +1,3 @@
-## Read the instructions below carefully in order to use FRIDAY.
 
 ### Configurations for `.env` file:
 
