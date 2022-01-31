@@ -26,5 +26,5 @@
 ### **For any kind of bugs and suggestions to improve **FRIDAY**, Please let us know in [Issues](https://github.com/realdarkstar/Project-Friday-on-Python/issues)**.
 ### **Also, Since FRIDAY is in it's early stage the functions you can implement with FRIDAY is limited. If you have any Ideas about adding more functions in FRIDAY then please do let us know in [Issues](https://github.com/realdarkstar/Project-Friday-on-Python/issues).**
 
-### **If you're a DEV and you like and appreciate what we've made then feel free to contribute.**
+### **If you're a DEV and you appreciate what we've made then feel free to contribute.**
 
