@@ -1,3 +1,15 @@
+### **Pre-Requisites:**
+
+>### *If You are using Windows OS*
+   Make sure you have installed **[Python 3.10 or Newer](https://www.python.org/downloads/release/python-3100/)** installed on your machine.
+
+   Open **CMD** or **Windows Power Shell** as administrator in the Project-Friday-on-Python directory or wherever you've stored the cloned files of this repo, Type `pip install -r pre-requisites.txt` and it will install all the required packages to run FRIDAY. 
+   
+>### *If you are using Linux OS*
+   Open your Terminal in the directory where you've stored the cloned files of this repo and type following commands:
+   1. `sudo apt update` 
+   2. `sudo apt-get install python3 python3-pip`
+   3. `sudo pip3 install -r pre-requisites.txt`
 
 ### **Configurations for `.env` file:**
 
