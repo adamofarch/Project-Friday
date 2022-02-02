@@ -112,7 +112,7 @@ def send_email(receiver_address, subject, message):
     try:
         email = EmailMessage()
         email['To'] = receiver_address
-        email["Subject"] = subject
+        email['Subject'] = subject
         email['From'] = EMAIL
         email.set_content(message)
         server = smtplib.SMTP('smtp.gmail.com', 587)
@@ -185,7 +185,7 @@ if __name__=="__main__":
         elif 'open spotify' in query:
             os.startfile(path['spotify'])
         
-        elif 'open command promp' in query or 'open cmd' in query:
+        elif 'open command prompt' in query or 'open cmd' in query:
             os.Popen(path['cmd'])
 
         elif 'open youtube' in query:
@@ -199,6 +199,21 @@ if __name__=="__main__":
 
         elif 'open github' in query:
             webbrowser.Chrome(path['chrome']).open_new_tab("github.com")
+
+        elif 'open a website' in query:
+            speak("Which website you want to open sir")
+            site = take_user_input()
+            if '.com' in site:
+                if 'None' in site:
+                    speak("Please tell me a valid input")
+                else:
+                    webbrowser.Chrome(path['chrome']).open_new_tab(f"{site}")
+            else:
+                if 'None' in site:
+                    speak("Please tell me a valid input")
+                else:
+                    pywhatkit.search(site)
+                
 
         elif 'my ip' in query:
             result = requests.get('https://api64.ipify.org?format=json').json()
@@ -231,7 +246,7 @@ if __name__=="__main__":
             query = query.replace("on google", "")
             pywhatkit.search(query)
 
-        elif 'on youtube' in query:
+        elif 'on youtube' in query or 'on yt' in query:
             query = query.replace("search", "")
             query = query.replace("play", "")
             query = query.replace("on youtube", "")
@@ -261,7 +276,8 @@ if __name__=="__main__":
         elif 'news headlines' in query or 'latest news' in query:
             speak("please wait.....")
             result = get_latest_news()
-            print(result, sep="\n")
+            for item in result:
+                print(item, sep="\n")
             speak(result)
 
         elif 'weather today' in query:
@@ -277,17 +293,19 @@ if __name__=="__main__":
             speak("Please Wait.....")
             speak("There you go, sir")
             movies = get_trending_movies()
-            speak(f"Top Trending movies now are : {movies}")
-            print(movies, sep="\n")
+            speak(f"Top Trending movies now are : ")
+            for item in movies:
+                print(item, sep="\n")
+            speak(movies)
 
         elif 'tell me a joke' in query:
-            speak("Wait a sec .")
+            speak("Wait a second")
             joke = get_jokes()
             speak(joke)
             print(f'''
                 ====In case you didn't understood my accent :)====
 
-                {joke}
+                => {joke}
             ''')
             suggestion = input(f"Did you like it, Yes(Y) or No(N) ? => ").lower()
             print(suggestion)
@@ -297,7 +315,7 @@ if __name__=="__main__":
                 speak("I'll try for a good one next time sir .")
             
 
-        elif 'an advice' in query:
+        elif 'advice' in query:
             speak("Okay sir, I have something to suggest. May I ?")
             advice = get_random_advice()
             speak(f"Very well sir, Here we go then. {advice}")
