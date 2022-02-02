@@ -3,7 +3,7 @@ path = {
     'vs code': "<PATH>",
     'putty': "C:\\Program Files\\PuTTY\\putty.exe",
     'chrome': "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-    'brave': "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+    'brave': "<PATH>",
     'calculator': "C:\\Windows\\System32\\calc.exe",
     'songs': "<PATH>",
     'spotify': "<PATH>",
