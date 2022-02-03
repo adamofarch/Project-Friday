@@ -28,6 +28,8 @@ import os
 import subprocess as sp
 from paths import path
 import smtplib
+import time
+import pyautogui as ptg
 from exec_greet import exec_greet
 import sys
 
@@ -259,6 +261,8 @@ if __name__=="__main__":
             speak("What should be the message you want to send sir ?")
             message = take_user_input().lower()
             whatsapp_msg(number, message)
+            time.sleep(10.0)
+            ptg.press("enter")
             speak("Message sent !")
 
         elif 'send an email' in query:
