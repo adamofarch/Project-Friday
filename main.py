@@ -4,16 +4,6 @@
 # Follow me on Instagram: https://instagram.com/realdarkstar
 # For suggestions and bug reports: https://github.com/realdarkstar/Project-Friday-on-Python/issues
 
-'''IMPORTANT(For DEVs): The Traceback and TypeError raised after the execution of this code is because
-                        of the module pywhatkit i figured and they're harmless to the code ofcourse since, 
-                        it's being generated from the source of pywhatkit module and being raised after execution
-                        I have supressed Traceback using sys module but we can't remove the module itself to fix
-                        both of the errors at once since it is required to execute some functions of this
-                        code to make it a feature rich AI. So we have to ignore the TypeError unfortunately. 
-                        I will update the code as soon as i'll be able to find a appropriate way to fix the
-                        error or to supress it.  
-'''
-
 from email.message import EmailMessage
 import webbrowser
 import pyttsx3
