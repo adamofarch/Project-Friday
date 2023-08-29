@@ -31,7 +31,7 @@
 ### **Configuration of paths to your programs in your PC you want to open with FRIDAY:**
 
 1. Open `paths.py` file with your desirable editor and paste paths of the program in place of `<PATH>`
-2. > **NOTE:** Remember to use `\\` instead of `\` while entering path. 
+2. **NOTE:** Remember to use `\\` instead of `\` while entering path. 
 
 
 ### **For any kind of bugs and suggestions to improve **FRIDAY**, Please let us know in [Issues](https://github.com/realdarkstar/Project-Friday-on-Python/issues)**.
