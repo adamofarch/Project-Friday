@@ -15,7 +15,7 @@
 
 1. Open `.env` file with your desired editor and enter your details in place of `<INPUT>`
 2. Save the `.env` file 
-3. > **NOTE:** You don't have to edit any api keys stored in the `.env` file until you are a dev and want to input your own api keys 
+3. **NOTE:** You don't have to edit any api keys stored in the `.env` file until you are a dev and want to input your own api keys 
 
 ### **Configuration of your email account to use send email function:**
 
